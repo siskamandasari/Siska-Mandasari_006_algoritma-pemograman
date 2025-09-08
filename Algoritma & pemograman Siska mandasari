@@ -1,0 +1,138 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO6vIGUNT1TsVJ1DOUNxbug",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/siskamandasari/Siska-Mandasari_006_algoritma-pemograman/blob/main/Algoritma%20%26%20pemograman%20Siska%20mandasari\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def hitung_kecepatan(jarak, waktu):\n",
+        "    return jarak / waktu\n",
+        "\n",
+        "print(\"Kasus 1-kendaraan darat\")\n",
+        "mobil_A = hitung_kecepatan(2000, 90)\n",
+        "motor_B = hitung_kecepatan(1500, 50)\n",
+        "sepeda_C = hitung_kecepatan(800, 40)\n",
+        "print(f\"Mobil_A: {mobil_A:.2f} m/s\")\n",
+        "print(f\"Motor_B: {motor_B:.2f} m/s\")\n",
+        "print(f\"Sepeda_C: {sepeda_C:.2f} m/s\")\n",
+        "if mobil_A > motor_B and mobil_A > sepeda_C:\n",
+        "    print(\"mobil_A tercepat\")\n",
+        "elif motor_B > mobil_A and motor_B > sepeda_C:\n",
+        "    print(\"motor_B tercepat\")\n",
+        "else:\n",
+        "    print(\"sepeda_C tercepat\")\n",
+        "\n",
+        "print()\n",
+        "\n",
+        "print(\"Kasus 2-atlet lari\")\n",
+        "pelari_1 = hitung_kecepatan(400, 50)\n",
+        "pelari_2 = hitung_kecepatan(800, 120)\n",
+        "pelari_3 = hitung_kecepatan(100, 11)\n",
+        "print(f\"Pelari_1: {pelari_1:.2f} m/s\")\n",
+        "print(f\"Pelari_2: {pelari_2:.2f} m/s\")\n",
+        "print(f\"Pelari_3: {pelari_3:.2f} m/s\")\n",
+        "if pelari_1 > pelari_2 and pelari_1 > pelari_3:\n",
+        "    print(\"pelari_1 tercepat\")\n",
+        "elif pelari_2 > pelari_1 and pelari_2 > pelari_3:\n",
+        "    print(\"pelari_2 tercepaf\")\n",
+        "else:\n",
+        "    print(\"pelari_3 tercepat\")\n",
+        "\n",
+        "print()\n",
+        "\n",
+        "print(\"Kasus 3-transportasi umum\")\n",
+        "Kereta = hitung_kecepatan(5000, 100)\n",
+        "Buskota = hitung_kecepatan(3000, 120)\n",
+        "Truk = hitung_kecepatan(2500, 120)\n",
+        "print(f\"Kereta: {Kereta:.2f} m/s\")\n",
+        "print(f\"Bus kota: {Buskota:.2f} m/s\")\n",
+        "print(f\"Truk: {Truk:.2f} m/s\")\n",
+        "if Kereta > Buskota and Kereta > Truk:\n",
+        "    print(\"kereta tercepat\")\n",
+        "elif Buskota > Kereta and Buskota > Truk:\n",
+        "    print(\"buskota tercepat\")\n",
+        "else:\n",
+        "    print(\"truk tercepat\")\n",
+        "\n",
+        "print()\n",
+        "\n",
+        "print(\"Kasus 4-udara, laut, dan darat\")\n",
+        "Udara = hitung_kecepatan(1200, 60)\n",
+        "Laut = hitung_kecepatan(5000, 300)\n",
+        "Darat = hitung_kecepatan(60, 7)\n",
+        "print(f\"udara: {Udara:.2f} m/s\")\n",
+        "print(f\"Laut: {Laut:.2f} m/s\")\n",
+        "print(f\"Darat: {Darat:.2f} m/s\")\n",
+        "if Udara > Laut and Udara > Darat:\n",
+        "    print(\"udara tercepat\")\n",
+        "elif Laut > Udara and Laut > Darat:\n",
+        "    print(\"laut tercepat\")\n",
+        "else:\n",
+        "    print(\"darat tercepat\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xtko4IhDpIRo",
+        "outputId": "31622cfc-8831-40aa-9021-a2b1d6f1dbc4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Kasus 1-kendaraan darat\n",
+            "Mobil_A: 22.22 m/s\n",
+            "Motor_B: 30.00 m/s\n",
+            "Sepeda_C: 20.00 m/s\n",
+            "motor_B tercepat\n",
+            "\n",
+            "Kasus 2-atlet lari\n",
+            "Pelari_1: 8.00 m/s\n",
+            "Pelari_2: 6.67 m/s\n",
+            "Pelari_3: 9.09 m/s\n",
+            "pelari_3 tercepat\n",
+            "\n",
+            "Kasus 3-transportasi umum\n",
+            "Kereta: 50.00 m/s\n",
+            "Bus kota: 25.00 m/s\n",
+            "Truk: 20.83 m/s\n",
+            "kereta tercepat\n",
+            "\n",
+            "Kasus 4-udara, laut, dan darat\n",
+            "udara: 20.00 m/s\n",
+            "Laut: 16.67 m/s\n",
+            "Darat: 8.57 m/s\n",
+            "udara tercepat\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
